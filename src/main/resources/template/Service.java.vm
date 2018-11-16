@@ -1,0 +1,28 @@
+package ${package}.${moduleName}.service;
+
+import com.baomidou.mybatisplus.service.IService;
+import ${mainPath}.common.utils.PageUtils;
+import ${package}.${moduleName}.entity.${className}Entity;
+
+import java.util.List;
+import java.util.Map;
+
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+public interface ${className}Service extends IService<${className}Entity> {
+
+    PageUtils queryPage(Map<String, Object> params);
+
+    List<${className}Entity> queryList(Map<String, Object> params);
+
+    ${className}Entity save(${className}Entity ${classname});
+
+    ${className}Entity update(${className}Entity ${classname});
+
+    void deleteBatch(${pk.attrType}[] ${pk.attrname}s);
+}

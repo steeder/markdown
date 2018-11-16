@@ -1,0 +1,9 @@
+**表名：** ${tableName}
+**说明：** ${comments}
+
+------------
+|字段名|类型|说明|
+|:-------|:-------|:-------|
+#foreach($column in $columns)
+|${column.columnName}|${column.dataType}|${column.comments}|
+#end

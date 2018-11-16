@@ -1,0 +1,20 @@
+server:
+  port: 80
+
+# mysql
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://118.31.22.55:3306/cloth?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: ruiz
+    password: Ruizhi.88628864
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  resources:
+    static-locations: classpath:/static/,classpath:/views/
+
+# Mybatis配置
+mybatis-plus:
+  mapper-locations: classpath:mapper/**/*.xml
